@@ -1,141 +1,143 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Spotiapp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Spotiapp</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@1.3.0/dist/bulma-calendar.min.css" integrity="sha256-eVV75oL7eilBl/RR6/GMu60t2KTJLThGmc2Ncp5n/n4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@1.3.0/dist/bulma-calendar.min.css" integrity="sha256-eVV75oL7eilBl/RR6/GMu60t2KTJLThGmc2Ncp5n/n4=" crossorigin="anonymous">
 </head>
-<body>
-  <nav class="navbar is-transparent is-primary">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-      </a>
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="https://bulma.io/">
+<body>
+    <nav class="navbar is-transparent is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="https://bulma.io/">
           Home
         </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="/documentation/overview/start/">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/documentation/overview/start/">
             Docs
           </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/documentation/overview/start/">
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="/documentation/overview/start/">
               Overview
             </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                        <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
               Modifiers
             </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
               Columns
             </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
               Layout
             </a>
-            <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
               Form
             </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
               Elements
             </a>
-            <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
               Components
             </a>
-          </div>
-        </div>
-      </div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
-                <span class="icon">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                <span class="icon">
                   <i class="fab fa-twitter"></i>
                 </span>
-                <span>
+                                <span>
                   Tweet
                 </span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
-                <span class="icon">
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+                                <span class="icon">
                   <i class="fas fa-download"></i>
                 </span>
-                <span>Download</span>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <section class="section">
-    <div class="container">
-      <div class="title ">
-        Creacion de ORC
-      </div>
-      <hr>
-
-    </div>
-  </section>
-  <section class="">
-    <div class="container ">
-      <div class="columns is-mobile is-centered">
-  <div class="column is-half is-narrow box">
-
-      <!-- Id de orc -->
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">ID</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control ">
-              <input class="input " type="text" placeholder="Id de la ORC" readonly>
+                                <span>Download</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Numero de Guia -->
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">N° Guia</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control ">
-              <input class="input " type="text" placeholder="Numero de Guia">
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="title ">
+                Creacion de ORC
             </div>
-          </div>
-        </div>
-      </div>
+            <hr>
 
-      <!-- Nombre Equipo -->
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Equipo</label>
         </div>
-        <div class="field-body  ">
-          <div class="field is-grouped">
-            <div class="control ">
-              <div class="select is-fullwidth is-rounded">
-                <select name="country">
+    </section>
+    <section class="">
+        <div class="container ">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-half is-narrow box">
+
+                    <!-- Id de orc -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">ID</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control ">
+                                    <input class="input " type="text" placeholder="Id de la ORC" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Numero de Guia -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">N° Guia</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control ">
+                                    <input class="input " type="text" placeholder="Numero de Guia">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nombre Equipo -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Equipo</label>
+                        </div>
+                        <div class="field-body  ">
+                            <div class="field is-grouped">
+                                <div class="control ">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select name="country">
                   <option value="Argentina">Argentina</option>
                   <option value="Bolivia">Bolivia</option>
                   <option value="Brazil">Brazil</option>
@@ -149,31 +151,31 @@
                   <option value="Uruguay">Uruguay</option>
                   <option value="Venezuela">Venezuela</option>
                 </select>
-              </div>
-            </div>
-            <div class="control">
-              <button id="showModal" class="button is-primary">
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <button id="showModal" class="button is-primary">
                 <span class="icon">
                   <i class="fas fa-plus"></i>
                 </span>
                 <span>Agregar Equipo</span>
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-       <!-- campo empresa -->
+                    <!-- campo empresa -->
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Empresa</label>
-        </div>
-        <div class="field-body  ">
-          <div class="field is-grouped">
-            <div class="control ">
-              <div class="select is-fullwidth is-rounded">
-                <select name="country">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Empresa</label>
+                        </div>
+                        <div class="field-body  ">
+                            <div class="field is-grouped">
+                                <div class="control ">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select name="country">
                   <option value="Argentina">Argentina</option>
                   <option value="Bolivia">Bolivia</option>
                   <option value="Brazil">Brazil</option>
@@ -187,31 +189,31 @@
                   <option value="Uruguay">Uruguay</option>
                   <option value="Venezuela">Venezuela</option>
                 </select>
-              </div>
-            </div>
-            <div class="control">
-              <button id="showModalempresa" class="button is-primary">
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <button id="showModalempresa" class="button is-primary">
                 <span class="icon">
                   <i class="fas fa-plus"></i>
                 </span>
                 <span>Agregar Empresa</span>
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <!-- campo vendedor -->
+                    <!-- campo vendedor -->
 
-     <div class="field is-horizontal">
-       <div class="field-label is-normal">
-         <label class="label">Vendedor</label>
-       </div>
-       <div class="field-body  ">
-         <div class="field is-grouped">
-           <div class="control ">
-             <div class="select is-fullwidth is-rounded">
-               <select name="country">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Vendedor</label>
+                        </div>
+                        <div class="field-body  ">
+                            <div class="field is-grouped">
+                                <div class="control ">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select name="country">
                  <option value="Argentina"></option>
                  <option value="Brazil">Brazil</option>
                  <option value="Chile">Chile</option>
@@ -219,29 +221,29 @@
                  <option value="Ecuador">Ecuador</option>
                  <option value="Guyana">Guyana</option>
                </select>
-             </div>
-           </div>
-           <div class="control">
-             <button id="showModalempresa" class="button is-primary">
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <button id="showModalempresa" class="button is-primary">
                <span class="icon">
                  <i class="fas fa-plus"></i>
                </span>
                <span>Agregar Vendedor</span>
              </button>
-           </div>
-         </div>
-       </div>
-     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <!-- Detalle -->
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Detalle</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea " placeholder="Breve descripcion de equipo"></textarea >
+                    <!-- Detalle -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Detalle</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea " placeholder="Breve descripcion de equipo"></textarea >
               </div>
             </div>
           </div>
@@ -269,7 +271,11 @@
             </label>
           </div>
 
-
+          <!-- Checkbox Urgente -->
+          <label class="checkbox">
+            <input type="checkbox">
+            <Strong>Urgentes</strong>
+          </label>
 
 
 
