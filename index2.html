@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Spotiapp</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-calendar@1.3.0/dist/bulma-calendar.min.css" integrity="sha256-eVV75oL7eilBl/RR6/GMu60t2KTJLThGmc2Ncp5n/n4=" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar is-transparent is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="https://bulma.io/">
+          Home
+        </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/documentation/overview/start/">
+            Docs
+          </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="/documentation/overview/start/">
+              Overview
+            </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+              Modifiers
+            </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+              Columns
+            </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+              Layout
+            </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+              Form
+            </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+              Elements
+            </a>
+                        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+              Components
+            </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                                <span>
+                  Tweet
+                </span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+                                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                                <span>Download</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <div class="title ">
+                Creacion de ORC Existen
+            </div>
+            <hr>
+
+        </div>
+    </section>
+    <section class="">
+        <div class="container ">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-half is-narrow box">
+
+                    <!-- Id de orc -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">ID</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control ">
+                                    <input class="input " type="text" placeholder="Id de la ORC" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Numero de Guia -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Ingreso</label>
+                        </div>
+                        <div class="field-body  ">
+                            <div class="field is-grouped">
+                                <div class="control ">
+                                    <div class="select is-fullwidth is-rounded">
+                                        <select name="country">
+                  <option value="Segundo">Segundo</option>
+                  <option value="Tercero">Tercero</option>
+                  <option value="Cuarto">Cuarto</option>
+                </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nombre Equipo -->
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">Equipo</label>
+                      </div>
+                      <div class="field-body ">
+                        <div class="field">
+                          <div class="control ">
+                            <input class="input " type="text" readonly>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- campo empresa -->
+
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Empresa</label>
+                        </div>
+                        <div class="field-body  ">
+                          <div class="field">
+                            <div class="control ">
+                              <input class="input " type="text" readonly>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Detalle -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Detalle</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea " placeholder="Breve descripcion de equipo"></textarea >
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Calendario -->
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Fecha de Recepcion</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input id="datepickerDemo" class="input" type="text" >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkbox Aprobacion Inmediata -->
+          <div class="field is-horizontal">
+            <label class="checkbox">
+              <input type="checkbox">
+              Aprobacion inmediata
+            </label>
+          </div>
+
+          <!-- Checkbox Urgente -->
+          <label class="checkbox">
+            <input type="checkbox">
+            <Strong>Urgentes</strong>
+          </label>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bulma-calendar@1.3.0/dist/bulma-calendar.js" integrity="sha256-ZWSpf1eNJRfthhuVpzI0ucbRp+z5mgVWurCHLpHfyys=" crossorigin="anonymous"></script>    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <script type="text/javascript">
+    $("#showModal").click(function() {
+      $(".modalequipo").addClass("is-active");
+      });
+      $("#modal-close").click(function() {
+         $(".modalequipo").removeClass("is-active");
+      });
+      $("#showModalempresa").click(function() {
+        $(".modalempresa").addClass("is-active");
+        });
+        $("#modalempresa-close").click(function() {
+           $(".modalempresa").removeClass("is-active");
+        });
+    </script>
+<script type="text/javascript">
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  var datePicker = new bulmaCalendar( document.getElementById( 'datepickerDemo' ), {
+    startDate: new Date(), // Date selected by default
+    dateFormat: 'dd-mm-yyyy', // the date format `field` value
+    lang: 'es', // internationalization
+    overlay: false,
+    closeOnOverlayClick: true,
+    closeOnSelect: true,
+    // callback functions
+    onSelect: null,
+    onOpen: null,
+    onClose: null,
+    onRender: null
+  } );
+} );
+
+</script>
+
+  </body>
+  </html>
