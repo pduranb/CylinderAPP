@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang='en'>
+<head>
+ <meta charset='utf-8'>
+ <title>my first pdfmake example</title>
+ <script src='pdfmake.min.js'></script>
+ <script src='vfs_fonts.js'></script>
+</head>
+<body>
+  <button onclick="openpdf()" type="button" name="button">pdf</button>
+  <script>
+   function openpdf(){
+     var dd = {
+       content: [
+   {
+     text: 'CERTIFICADO DE PRUEBA\n\n',
+     style: 'header',
+     alignment: 'center'
+   },
+   {
+     style: 'tableExample',
+     table: {
+       widths: [100, '*', 95, '*'],
+       body: [
+         ['Empresa', '', {text:'ORC', alignment: 'center'}, ''],
+         ['Equipo', '', 'Prueba recomendada',''],
+         ['Modelo de equpo','','Fecha de prueba',''],
+       ]
+     }
+   },
+   {
+     text: [
+       '\n\nSM Cylinder LTDA. Certifica que su componente, ha sido probado bajo los estandares de calidad.\n\n',
+       'La prueba a la cual fue sometida su componente, consiste en generar presion interna por ambas camara con el fin de simular las presiones maximas que trabaja, de igual forma se realiza bloqueo con el fin de verificar que no exista fuga interna en el componenete y aumentar la presion al maximo entre piston y prensa verificando que no exista fuga de prensa ni desplazamiento de vastago.\n\n\n',
+
+       ],
+     style: 'subheader',
+     bold: false
+   },
+   {
+     text: 'BANCO DE PRUEBA\n',
+     style: 'subheader',
+     alignment: 'center',
+     bold:true,
+     fontSize:16,
+   },
+   {
+     style: 'tableExample',
+     table: {
+       widths: [100, '*', 95, '*'],
+       body: [
+         [{text:'Valvula reguladora de presion', alignment: 'center', bold:true}, '100 psi a 6000 psi', 'Presion Bloqueo Maxima', '6000 psi'],
+         ['Caudal', {text:'40 LITROS/MINUTO', alignment:'center', colSpan:3},'',''],
+         ['Capacidad', {text:'440 Litros', alignment:'center', colSpan:3},'',''],
+         ['Temperatura de Aceite', {text:'40°', alignment:'center', colSpan:3},'',''],
+       ]
+     }
+   },
+   {
+     text: '\nPRESIONES SOMETIDAS\n',
+     style: 'subheader',
+     alignment: 'center',
+     bold:true,
+     fontSize:16,
+   },
+   {
+     style: 'tableExample',
+     table: {
+       widths: [100, '*', 95, '*'],
+       body: [
+         ['Presion A',{text: 'Presion B', alignment: 'center'}, {text:'Presion Camaras A/B', colSpan:2, alignment: 'center'}, ''],
+         ['2300 PSI', '2500 PSI', '2200 PSI','1700 PSI'],
+
+       ]
+     }
+   },
+   {
+     text: '\nPRUEBA DE DESPLAZAMIENTO BLOQUE INTERNO\n',
+     style: 'subheader',
+     alignment: 'center',
+     bold:true,
+     fontSize:16,
+   },
+   {
+     style: 'tableExample',
+     table: {
+       widths: [120, '*', 95, '*'],
+       body: [
+         [{text:'Ensayo de bloque interno', alignment: 'center'},{text: 'Tiempo de Prueba', alignment: 'center'}, {text:'Desplazamiento Interno', alignment: 'center'},{text: 'Observaciones', alignment:'center',}],
+         ['Primer Ensayo 1/4', '', ' ',' '],
+         ['Segundo Ensayo 1/2', '', ' ',' '],
+         ['Tercer Ensayo 3/4', '', '',' '],
+
+       ]
+     }
+   },
+   {
+     text: '\nRESULTADO DE PRUEBA\n',
+     style: 'subheader',
+     alignment: 'center',
+     bold:true,
+     fontSize:16,
+   },
+   {
+     text: [
+       'De acuerdo a los datos obtenidos durante la prueba, se certifica que su herramienta se encuentra apta para su uso, debido a que los parámetros medidos se encuentran',{text:' DENTRO', bold:true, italics:true},' del rango de tolerancia acreditando en nuestro procedimiento de trabajo.\n\n',
+       ],
+     style: 'subheader',
+     bold: false
+   },
+
+
+ ],
+ styles: {
+   header: {
+     fontSize: 20,
+     bold: true,
+     alignment: 'center'
+   },
+    subheader: {
+        fontSize:12,
+        bold:true,
+        alignment: 'center'
+    }
+ }
+
+
+};
+pdfMake.createPdf(dd).download('optionalName.pdf');
+}
+   </script>
+
+</body>
